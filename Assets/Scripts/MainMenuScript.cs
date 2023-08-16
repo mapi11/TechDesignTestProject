@@ -38,12 +38,6 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] private GameObject LanguagesView;
     [SerializeField] public GameObject MusicView;
 
-    [Space]
-    [Header("Hide")]
-    [SerializeField] private GameObject _imgHide;
-    [SerializeField] private GameObject _imgShow;
-    bool HideMenuBool = false;
-
     int WindowInt = 0;
     bool SettingsBool = true;
     string levelToLoad;
@@ -51,21 +45,13 @@ public class MainMenuScript : MonoBehaviour
     CanvasGroup LanguagesFade;
     CanvasGroup MusicFade;
     float expandFadeDuration = 0.7f;
+    float OtherExpandFadeDuration = 0.2f;
 
-    [Space]
-    [Header("Loading")]
-    [SerializeField] private GameObject LoadingScreen;
-    [SerializeField] private Slider loadingSlider;
-
-    [Space]
-    [Header("Sky materials")]
-    [SerializeField] private Material[] SkyMaterial;
-    [SerializeField] private Button[] _btnSkyMaterial;
-
-
+    MenuMusicScript _menuMusicScript;
 
     private void Awake()
     {
+        _menuMusicScript = FindObjectOfType<MenuMusicScript>();
 
         SetMusic(SavePrefScript.Load(SavePrefScript.PrefTypes.Music));
 
@@ -73,6 +59,8 @@ public class MainMenuScript : MonoBehaviour
         LanguagesFade = LanguagesView.GetComponent<CanvasGroup>();
         MusicFade = MusicView.GetComponent<CanvasGroup>();
 
+        _btnFirst.onClick.AddListener(LoadLevelFirst);
+        _btnSecond.onClick.AddListener(LoadLevelSecond);
         _btnSettings.onClick.AddListener(SettingsOpen);
         _btnQuit.onClick.AddListener(QuitGame);
 
@@ -110,8 +98,8 @@ public class MainMenuScript : MonoBehaviour
         {
             StartCoroutine(FadeSettingsOpen());
             SettingsFade.DOFade(0, expandFadeDuration).From(1f);
-            LanguagesFade.DOFade(0, expandFadeDuration).From(1f);
-            MusicFade.DOFade(0, expandFadeDuration).From(1f);
+            LanguagesFade.DOFade(0, OtherExpandFadeDuration).From(1f);
+            MusicFade.DOFade(0, OtherExpandFadeDuration).From(1f);
             SettingsBool = true;
 
             WindowInt = 0;
@@ -178,49 +166,33 @@ public class MainMenuScript : MonoBehaviour
         _btnChangeMusic.onClick.AddListener(MusicOpen);
     }
 
-    private void LoadLevelBtn()
+    private void LoadLevelFirst()
     {
-        levelToLoad = "SC_Test";
-        LoadingScreen.SetActive(true);
-
-        Time.timeScale = 1f;
-        StartCoroutine(LoadLevelASync());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    private void LoadChunksLevelBtn()
+    private void LoadLevelSecond()
     {
-        levelToLoad = "SC_LandScape_Test";
-        LoadingScreen.SetActive(true);
-
-        Time.timeScale = 1f;
-        StartCoroutine(LoadLevelASync());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
-    IEnumerator LoadLevelASync()
-    {
-        Time.timeScale = 1f;
-
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
-
-        while (loadOperation.isDone)
-        {
-            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-            loadingSlider.value = progressValue;
-            yield return null;
-        }
-    }
 
     private void SetMusic(int setMusic)
     {
         SavePrefScript.Save(SavePrefScript.PrefTypes.Music, setMusic);
+        if (_menuMusicScript._int != setMusic)
+        {
+            _menuMusicScript._int = setMusic;
+            _menuMusicScript.MakeMusic(setMusic);
 
-        _btnMusic[0].GetComponent<Image>().color = setMusic == 0 ? Color.gray : Color.white;
-        _btnMusic[1].GetComponent<Image>().color = setMusic == 1 ? Color.gray : Color.white;
-        _btnMusic[2].GetComponent<Image>().color = setMusic == 2 ? Color.gray : Color.white;
-        _btnMusic[3].GetComponent<Image>().color = setMusic == 3 ? Color.gray : Color.white;
-        _btnMusic[4].GetComponent<Image>().color = setMusic == 4 ? Color.gray : Color.white;
-        _btnMusic[5].GetComponent<Image>().color = setMusic == 5 ? Color.gray : Color.white;
-        _btnMusic[6].GetComponent<Image>().color = setMusic == 6 ? Color.gray : Color.white;
-        _btnMusic[7].GetComponent<Image>().color = setMusic == 7 ? Color.gray : Color.white;
+            _btnMusic[0].GetComponent<Image>().color = setMusic == 0 ? Color.gray : Color.white;
+            _btnMusic[1].GetComponent<Image>().color = setMusic == 1 ? Color.gray : Color.white;
+            _btnMusic[2].GetComponent<Image>().color = setMusic == 2 ? Color.gray : Color.white;
+            _btnMusic[3].GetComponent<Image>().color = setMusic == 3 ? Color.gray : Color.white;
+            _btnMusic[4].GetComponent<Image>().color = setMusic == 4 ? Color.gray : Color.white;
+            _btnMusic[5].GetComponent<Image>().color = setMusic == 5 ? Color.gray : Color.white;
+            _btnMusic[6].GetComponent<Image>().color = setMusic == 6 ? Color.gray : Color.white;
+            _btnMusic[7].GetComponent<Image>().color = setMusic == 7 ? Color.gray : Color.white;
+        }
     }
 
     private void DelSave()

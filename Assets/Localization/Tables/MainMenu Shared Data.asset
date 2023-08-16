@@ -31,6 +31,22 @@ MonoBehaviour:
     m_Key: BtnExit
     m_Metadata:
       m_Items: []
+  - m_Id: 80527285436416
+    m_Key: BtnLocalization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80652401524736
+    m_Key: BtnInfo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80750032338944
+    m_Key: BtnChangeMusic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86814102536192
+    m_Key: BtnDelSave
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

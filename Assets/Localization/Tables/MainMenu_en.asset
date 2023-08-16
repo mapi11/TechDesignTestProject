@@ -34,6 +34,22 @@ MonoBehaviour:
     m_Localized: Exit
     m_Metadata:
       m_Items: []
+  - m_Id: 80527285436416
+    m_Localized: Localization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80652401524736
+    m_Localized: Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80750032338944
+    m_Localized: Change music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86814102536192
+    m_Localized: Del save
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
