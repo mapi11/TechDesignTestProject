@@ -2091,15 +2091,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_Color.b
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_Color.g
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_Color.r
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_RaycastPadding.w
@@ -2195,11 +2195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 405.6413
+      value: 565
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225
+      value: -212.5
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2212,6 +2212,14 @@ PrefabInstance:
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610122031210737471, guid: c4a90634859acae459220048476d6e65, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 27250317475840
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610122031210737471, guid: c4a90634859acae459220048476d6e65, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:2bcc4114232bac640931e50f27f0088d
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a90634859acae459220048476d6e65, type: 3}
@@ -2392,15 +2400,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_Color.b
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_Color.g
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_Color.r
-      value: 0.95
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394249, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_RaycastPadding.w
@@ -2496,11 +2504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 230.6413
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -225
+      value: -212.5
       objectReference: {fileID: 0}
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2513,6 +2521,14 @@ PrefabInstance:
     - target: {fileID: 863051178833394251, guid: c4a90634859acae459220048476d6e65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610122031210737471, guid: c4a90634859acae459220048476d6e65, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 27146311319552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610122031210737471, guid: c4a90634859acae459220048476d6e65, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:2bcc4114232bac640931e50f27f0088d
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a90634859acae459220048476d6e65, type: 3}

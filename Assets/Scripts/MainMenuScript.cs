@@ -22,11 +22,11 @@ public class MainMenuScript : MonoBehaviour
     [Header("Settings Buttons")]
     [SerializeField] private Button _btnLanguages;
     [SerializeField] private Button _btnChangeMusic;
+    [SerializeField] private Button _btnInfo;
 
     [Space]
     [Header("Music Buttons")]
     [SerializeField] private Button[] _btnMusic;
-
 
     [Space]
     [Header("Language")]
@@ -37,6 +37,7 @@ public class MainMenuScript : MonoBehaviour
     [SerializeField] private GameObject SettingsView;
     [SerializeField] private GameObject LanguagesView;
     [SerializeField] public GameObject MusicView;
+    [SerializeField] public GameObject InfoView;
 
     int WindowInt = 0;
     bool SettingsBool = true;
@@ -44,6 +45,7 @@ public class MainMenuScript : MonoBehaviour
     CanvasGroup SettingsFade;
     CanvasGroup LanguagesFade;
     CanvasGroup MusicFade;
+    CanvasGroup InfoFade;
     float expandFadeDuration = 0.7f;
     float OtherExpandFadeDuration = 0.2f;
 
@@ -58,6 +60,7 @@ public class MainMenuScript : MonoBehaviour
         SettingsFade = SettingsView.GetComponent<CanvasGroup>();
         LanguagesFade = LanguagesView.GetComponent<CanvasGroup>();
         MusicFade = MusicView.GetComponent<CanvasGroup>();
+        InfoFade = InfoView.GetComponent<CanvasGroup>();
 
         _btnFirst.onClick.AddListener(LoadLevelFirst);
         _btnSecond.onClick.AddListener(LoadLevelSecond);
@@ -68,6 +71,7 @@ public class MainMenuScript : MonoBehaviour
 
         _btnLanguages.onClick.AddListener(LanguagesOpen);
         _btnChangeMusic.onClick.AddListener(MusicOpen);
+        _btnInfo.onClick.AddListener(InfoOpen);
 
 
         _btnMusic[0].onClick.AddListener(() => SetMusic(0));
@@ -100,6 +104,7 @@ public class MainMenuScript : MonoBehaviour
             SettingsFade.DOFade(0, expandFadeDuration).From(1f);
             LanguagesFade.DOFade(0, OtherExpandFadeDuration).From(1f);
             MusicFade.DOFade(0, OtherExpandFadeDuration).From(1f);
+            InfoFade.DOFade(0, OtherExpandFadeDuration).From(1f);
             SettingsBool = true;
 
             WindowInt = 0;
@@ -113,6 +118,7 @@ public class MainMenuScript : MonoBehaviour
         SettingsView.gameObject.SetActive(false);
         LanguagesView.gameObject.SetActive(false);
         MusicView.gameObject.SetActive(false);
+        InfoView.gameObject.SetActive(false);
         _btnSettings.onClick.AddListener(SettingsOpen);
     }
 
@@ -123,6 +129,7 @@ public class MainMenuScript : MonoBehaviour
             LanguagesFade.DOFade(1f, expandFadeDuration).From(0f);
             LanguagesView.gameObject.SetActive(true);
             MusicView.gameObject.SetActive(false);
+            InfoView.gameObject.SetActive(false);
             WindowInt = 3;
         }
         else
@@ -139,6 +146,7 @@ public class MainMenuScript : MonoBehaviour
         yield return new WaitForSeconds(1f);
         LanguagesView.gameObject.SetActive(false);
         MusicView.gameObject.SetActive(false);
+        InfoView.gameObject.SetActive(false);
         _btnLanguages.onClick.AddListener(LanguagesOpen);
     }
 
@@ -149,6 +157,7 @@ public class MainMenuScript : MonoBehaviour
             MusicFade.DOFade(1f, expandFadeDuration).From(0f);
             LanguagesView.gameObject.SetActive(false);
             MusicView.gameObject.SetActive(true);
+            InfoView.gameObject.SetActive(false);
             WindowInt = 4;
         }
         else
@@ -165,7 +174,36 @@ public class MainMenuScript : MonoBehaviour
         yield return new WaitForSeconds(1f);
         LanguagesView.gameObject.SetActive(false);
         MusicView.gameObject.SetActive(false);
+        InfoView.gameObject.SetActive(false);
         _btnChangeMusic.onClick.AddListener(MusicOpen);
+    }
+
+    private void InfoOpen()
+    {
+        if (WindowInt != 5)
+        {
+            InfoFade.DOFade(1f, expandFadeDuration).From(0f);
+            LanguagesView.gameObject.SetActive(false);
+            MusicView.gameObject.SetActive(false);
+            InfoView.gameObject.SetActive(true);
+            WindowInt = 5;
+        }
+        else
+        {
+            StartCoroutine(FadeInfoOpen());
+            InfoFade.DOFade(0, expandFadeDuration).From(1f);
+            WindowInt = 0;
+            StopCoroutine(FadeInfoOpen());
+        }
+    }
+    IEnumerator FadeInfoOpen()
+    {
+        _btnInfo.onClick.RemoveListener(InfoOpen);
+        yield return new WaitForSeconds(1f);
+        LanguagesView.gameObject.SetActive(false);
+        MusicView.gameObject.SetActive(false);
+        InfoView.gameObject.SetActive(false);
+        _btnInfo.onClick.AddListener(InfoOpen);
     }
 
     private void LoadLevelFirst()

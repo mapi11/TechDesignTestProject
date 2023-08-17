@@ -332,10 +332,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 248287552506070481}
   m_HandleRect: {fileID: 5575527011869162705}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.1
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.55
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

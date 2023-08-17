@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: BtnDelSave
     m_Metadata:
       m_Items: []
+  - m_Id: 397238551330816
+    m_Key: TxtInfo
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

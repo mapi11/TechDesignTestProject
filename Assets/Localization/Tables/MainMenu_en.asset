@@ -50,6 +50,32 @@ MonoBehaviour:
     m_Localized: Del save
     m_Metadata:
       m_Items: []
+  - m_Id: 397238551330816
+    m_Localized: 'TechDesignTestProject_AstrakhantsevMaxim
+
+
+
+      All music with
+      permission for commercial use (https://www.chosic.com/free-music/lofi/)
+
+
+
+      Plugins
+      used in the project:
+
+      - Localization (Version 1.3.2).
+
+      - TextMeshPro
+      (Version 3.0.6).
+
+      - 2D Character Sprite Animation - Penguin.
+
+      -
+      DOTween (HOTween v2).
+
+      - Neumorphic UI - Basic.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
