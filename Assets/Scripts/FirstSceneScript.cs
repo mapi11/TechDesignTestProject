@@ -49,7 +49,6 @@ public class FirstSceneScript : MonoBehaviour
             SecondAnims[1].SetBool("IsPlaying", false);
             SecondAnims[2].SetBool("IsPlaying", false);
             SecondAnims[3].SetBool("IsPlaying", false);
-            SecondAnims[4].SetBool("IsPlaying", false);
         }
         else
         {
@@ -59,7 +58,6 @@ public class FirstSceneScript : MonoBehaviour
             SecondAnims[1].SetBool("IsPlaying", true);
             SecondAnims[2].SetBool("IsPlaying", true);
             SecondAnims[3].SetBool("IsPlaying", true);
-            SecondAnims[4].SetBool("IsPlaying", true);
         }
     }
 

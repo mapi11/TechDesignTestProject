@@ -284,7 +284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 312.4875, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7618982120859453440
@@ -732,7 +732,6 @@ MonoBehaviour:
   FirstAnims:
   - {fileID: 6922016138166534633}
   SecondAnims:
-  - {fileID: 6922016137205181315}
   - {fileID: 5236688563007941967}
   - {fileID: 6922016138778105371}
   - {fileID: 6922016138127099799}
@@ -1534,11 +1533,6 @@ PrefabInstance:
 --- !u!224 &6922016136760748424 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2928330968196738668, guid: af7c8ed0f71019645b2c4b8506a0c950, type: 3}
-  m_PrefabInstance: {fileID: 5236688562665097188}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &6922016137205181315 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2928330968372866151, guid: af7c8ed0f71019645b2c4b8506a0c950, type: 3}
   m_PrefabInstance: {fileID: 5236688562665097188}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6922016138206650829 stripped
