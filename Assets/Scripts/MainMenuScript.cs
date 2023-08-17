@@ -108,10 +108,12 @@ public class MainMenuScript : MonoBehaviour
     }
     IEnumerator FadeSettingsOpen()
     {
+        _btnSettings.onClick.RemoveListener(SettingsOpen);
         yield return new WaitForSeconds(1f);
         SettingsView.gameObject.SetActive(false);
         LanguagesView.gameObject.SetActive(false);
         MusicView.gameObject.SetActive(false);
+        _btnSettings.onClick.AddListener(SettingsOpen);
     }
 
     private void LanguagesOpen()
