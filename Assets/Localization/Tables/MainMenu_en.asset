@@ -73,6 +73,8 @@ MonoBehaviour:
       -
       DOTween (HOTween v2).
 
+      - spine-unity 4.1
+
       - Neumorphic UI - Basic.'
     m_Metadata:
       m_Items: []

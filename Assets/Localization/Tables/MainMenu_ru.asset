@@ -59,7 +59,7 @@ MonoBehaviour:
       \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0435 \u0432
       \u043F\u0440\u043E\u0435\u043A\u0442\u0435: \r\n- Localization (Version 1.3.2).\r\n-
       TextMeshPro (Version 3.0.6).\r\n- 2D Character Sprite Animation - Penguin.\r\n-
-      DOTween (HOTween v2).\r\n- Neumorphic UI - Basic.\r\n"
+      DOTween (HOTween v2).\r\n- Neumorphic UI - Basic.\r\n- spine-unity 4.1\n"
     m_Metadata:
       m_Items: []
   references:
