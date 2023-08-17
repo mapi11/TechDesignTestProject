@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: FirstScene_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 2bcc4114232bac640931e50f27f0088d, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 305197337753419823
+  m_TableData:
+  - m_Id: 854610296832
+    m_Localized: Walk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 917629714432
+    m_Localized: Preslide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1044863926272
+    m_Localized: Slide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1376713064448
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1634402713600
+    m_Localized: Other animations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1773762658304
+    m_Localized: '* Press on "Jump"  to play this animation
+
+
+      *Press on "Atack" 
+      to stop other animations'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2133478752256
+    m_Localized: Jump
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 305197337753419823
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00403ec22d010000

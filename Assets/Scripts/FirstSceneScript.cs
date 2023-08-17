@@ -24,8 +24,7 @@ public class FirstSceneScript : MonoBehaviour
 
     public void PressFirtsSprite()
     {
-        Debug.Log("First");
-
+        //Debug.Log("First");
         if (secondBool == true)
         {
             secondBool = false;
@@ -41,7 +40,7 @@ public class FirstSceneScript : MonoBehaviour
     }
     public void PressSecondSprite()
     {
-        Debug.Log("Second");
+        //Debug.Log("Second");
         if (MainMenuBool == true)
         {
             MainMenuBool = false;
