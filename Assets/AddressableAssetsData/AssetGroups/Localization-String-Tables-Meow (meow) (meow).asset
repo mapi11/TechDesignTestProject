@@ -10,31 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-Locales
+  m_Name: Localization-String-Tables-Meow (meow) (meow)
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-Locales
+  m_GroupName: Localization-String-Tables-Meow (meow) (meow)
   m_Data:
     m_SerializedData: []
-  m_GUID: c872a73ce7b2b1a46b331329869b353e
+  m_GUID: 7545751069b040742a44223623ea9bb4
   m_SerializeEntries:
-  - m_GUID: 6889be093ccc9b04880f22a7e9accaf0
-    m_Address: English (en)
+  - m_GUID: 3bf666c432bf02047b604dc5163aefbb
+    m_Address: MainMenu_meow
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale
-  - m_GUID: 413d96b1ff06eba4c9aa6adedbc64c3a
-    m_Address: Russian (ru)
+    - Locale-meow
+    - Preload
+  - m_GUID: 3f6354a01a391a24f8a6c38fa71fb48f
+    m_Address: FirstScene_meow
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale
-  - m_GUID: 38284a7744feda249bfaf830f374e3f7
-    m_Address: Meow (meow)
+    - Locale-meow
+    - Preload
+  - m_GUID: 6e63d885731b3d2499910c599dd97a10
+    m_Address: SecondScene_meow
     m_ReadOnly: 1
     m_SerializedLabels:
-    - Locale
+    - Locale-meow
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 6ff49c7776881724c9b0dd2fdb039e84, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 42f3b9ff56adc7243b49ce09ad2be1bc, type: 2}
-    - {fileID: 11400000, guid: b57e4382a667c5e4a9ba0d4064c75e66, type: 2}
+    - {fileID: 11400000, guid: e5fa82558345bea41a6af05f2c7ff046, type: 2}
+    - {fileID: 11400000, guid: e03409c8257f59243ade6a5879b241e4, type: 2}

@@ -10,77 +10,52 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: MainMenu_en
+  m_Name: MainMenu_meow
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: en
+    m_Code: meow
   m_SharedData: {fileID: 11400000, guid: 3a616c9192d94fc4098c30c49eef2327, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 3820075499520
-    m_Localized: First scene
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6517327544320
-    m_Localized: Settings
+    m_Localized: Meow
     m_Metadata:
       m_Items: []
   - m_Id: 5830917111808
-    m_Localized: Second scene
+    m_Localized: Meeoow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6517327544320
+    m_Localized: Mew
     m_Metadata:
       m_Items: []
   - m_Id: 6613280636928
-    m_Localized: Exit
-    m_Metadata:
-      m_Items: []
-  - m_Id: 80527285436416
-    m_Localized: Localization
-    m_Metadata:
-      m_Items: []
-  - m_Id: 80652401524736
-    m_Localized: Info
+    m_Localized: Meouf
     m_Metadata:
       m_Items: []
   - m_Id: 80750032338944
-    m_Localized: Change music
+    m_Localized: Meow meuf
     m_Metadata:
       m_Items: []
-  - m_Id: 86814102536192
-    m_Localized: Del save
+  - m_Id: 80527285436416
+    m_Localized: Me meow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80652401524736
+    m_Localized: Meowuf
     m_Metadata:
       m_Items: []
   - m_Id: 397238551330816
-    m_Localized: 'TechDesignTestProject_AstrakhantsevMaxim
-
-
-
-      All music with
-      permission for commercial use (https://www.chosic.com/free-music/lofi/)
-
-
-      Font
-      used in the project:
-
-      https://fonts-online.ru/fonts/pricedown
-
-
-      Plugins
-      used in the project:
-
-      - Localization (Version 1.3.2).
-
-      - TextMeshPro
-      (Version 3.0.6).
-
-      - 2D Character Sprite Animation - Penguin.
-
-      -
-      DOTween (HOTween v2).
-
-      - spine-unity 4.1
-
-      - Neumorphic UI - Basic.'
+    m_Localized: "TechDesignTestProject_MeowstrakhantsevMeowsim\n\nMew meow  meuf
+      meow meeow nyaaa (https://www.chosic.com/free-music/lofi/)\r\n\r\nme me meow:\r\nhttps://fonts-online.ru/fonts/pricedown\n\nMeouw
+      meow mee meow: \r\n- Localization (Version 1.3.2).\r\n- TextMeshPro (Version
+      3.0.6).\r\n- 2D Character Sprite Animation - Penguin.\r\n- DOTween (HOTween
+      v2).\r\n- Neumorphic UI - Basic.\r\n- spine-unity 4.1\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86814102536192
+    m_Localized: Me meof
     m_Metadata:
       m_Items: []
   references:
